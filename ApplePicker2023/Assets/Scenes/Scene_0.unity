@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 528647468}
   - component: {fileID: 528647470}
   - component: {fileID: 528647469}
+  - component: {fileID: 528647471}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -305,6 +306,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528647467}
   m_CullTransparentMesh: 1
+--- !u!114 &528647471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528647467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f0a5638de8a9641a7d08d78a3689aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +521,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &1818995871 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4150748769180254257, guid: 2f9873d5e74e9594b88d0a522f9f19a3, type: 3}
@@ -648,6 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5341bd765d1798d4892136ecd67b7f55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
 --- !u!114 &2010871916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,7 +690,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
